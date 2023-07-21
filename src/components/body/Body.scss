@@ -1,0 +1,40 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+        background-color: black;
+        position: relative;
+        &:hover p{
+            transform: translateY(0%);
+            opacity: .8;
+            transition: all .4s ease-in-out;
+            background-color: black;
+
+        }
+        h1{
+            color: blue;
+        }
+        img{
+            width: 25vw;
+            height: 300px;
+            object-fit: cover;
+        }
+        p{
+          color: aliceblue;
+          font-size: 2rem;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: all .4s ease-in-out;
+        }
+    }
+}
